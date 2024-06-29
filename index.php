@@ -18,33 +18,35 @@
 //Bonus 2:
 //Prevedere l'uso di qualsiasi controllo attraverso una funzione inserita in un file separato in 'src/functions.php/') (modificato) 
 
-$users=[
-    [
-        'username'='ValerioL96',
-        'password'='123456@Vl',
-    ],
-    [
-        'username'='Gigget88',
-        'password'='Gg88_',
-    ],
-    [
-        'username'='paSqualo',
-        'password'='Squalone$',
-    ],
-    [
-        'username'='Rock90',
-        'password'='TheRock#',
-    ],
-    [
-        'username'='DenisF',
-        'password'='555555-d',
-    ],
-    [
-        'username'='suSsann',
-        'password'='Juan_',
-    ],
-]
+$users = [
 
+    [
+        'username'=>'ValerioL96',
+        'password'=>'123456@Vl',
+    ],
+    [
+        'username'=>'Gigget88',
+        'password'=>'Gg88_',
+    ],
+    [
+        'username'=>'paSqualo',
+        'password'=>'Squalone$',
+    ],
+    [
+        'username'=>'Rock90',
+        'password'=>'TheRock#',
+    ],
+    [
+        'username'=>'DenisF',
+        'password'=>'555555-d',
+    ],
+    [
+        'username'=>'suSsann',
+        'password'=>'Juan_',
+    ],
+];
+
+var_dump($users);
 ?>
 
 <!DOCTYPE html>
