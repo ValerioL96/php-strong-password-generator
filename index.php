@@ -18,6 +18,11 @@
 //Bonus 2:
 //Prevedere l'uso di qualsiasi controllo attraverso una funzione inserita in un file separato in 'src/functions.php/') (modificato) 
 
+session_start();
+
+$_SESSION['username']='';
+$_SESSION['password']='';
+
 $users = [
 
     [
@@ -54,9 +59,29 @@ var_dump($users);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>php-strong-password-generator</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <li>
+                <a href="./index.php">
+                    Home
+                </a>
+
+            </li>
+            <li>
+            <a href="./login.php">
+                    Login
+                </a>
+            </li>
+        </nav>
+    </header>
+
+    <main>
+        <h1>
+            Benvent* <?php echo $_SESSION['username']?>
+        </h1>
+    </main>
 </body>
 </html>
