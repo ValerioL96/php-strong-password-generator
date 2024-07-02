@@ -1,4 +1,9 @@
 <?php
 session_start();
-session_unset();
+
+if (isset($_SESSION["logged"]) && $_SESSION["logged"]=== true) {
+    session_unset();
+}
+Header("Location: ./login.php");
+
 ?>
